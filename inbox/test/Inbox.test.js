@@ -4,30 +4,30 @@ const Web3 =  require('web3');
 const { isMainThread } = require('worker_threads');
 const web3 = new Web3(ganache.provider());
 
-// class Car {
-//     park() {
-//         return 'stopped';
-//     }
+class Car {
+    park() {
+        return 'stopped';
+    }
 
-//     drive() {
-//         return 'vroom';
-//     }
-// }
+    drive() {
+        return 'vroom';
+    }
+}
 
-// let car;
+let car;
 
-// beforeEach(() => {
-//     car = new Car();
-// });
+beforeEach(() => {
+    car = new Car();
+});
 
-// describe('Car Class', () => {
-//     it('can park', () => {
-//         assert.equal(car.park(), 'stopped');
-//     });
+describe('Car Class', () => {
+    it('can park', () => {
+        assert.equal(car.park(), 'stopped');
+    });
 
-//     it('can drive', () => {
-//         assert.equal(car.drive(), 'vroom');
-//     });
-// })
+    it('can drive', () => {
+        assert.equal(car.drive(), 'vroom');
+    });
+})
 
 
